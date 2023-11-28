@@ -1,0 +1,61 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.gallery {
+    display: flex;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnails img {
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+}
+.descripcion{
+    margin-top: 40px;
+}
+
+.full-image {
+    width: 500px;
+    height: auto;
+}
+
+.full-image {
+    margin-left: 20px;
+}
+.modal-body {
+    max-height: 350px;
+    overflow-y: auto; 
+}
+.thumbnails {
+    max-height: 350px; /* Ajusta la altura máxima según sea necesario */
+    overflow-y: auto; /* Agrega la barra de desplazamiento vertical si es necesario */
+    white-space: nowrap; /* Evita que las miniaturas se envuelvan a la siguiente línea */
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+
+.thumbnails img {
+    width: auto; /* Ajusta el ancho de las miniaturas según sea necesario */
+    max-height: 100px; /* Mantiene la proporción de aspecto */
+}
+
+@media (max-width: 768px) {
+    .thumbnails {
+        max-height: 200px; /* Ajusta la altura máxima según sea necesario */
+        overflow-y: auto; /* Agrega la barra de desplazamiento vertical si es necesario */
+        white-space: nowrap; /* Evita que las miniaturas se envuelvan a la siguiente línea */
+        overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    }
+    
+    .thumbnails img {
+        width: auto; /* Ajusta el ancho de las miniaturas según sea necesario */
+        max-height: 200px; /* Mantiene la proporción de aspecto */
+    }
+    
+}
+
